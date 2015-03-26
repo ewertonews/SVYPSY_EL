@@ -33,7 +33,51 @@
 		var img2;
 		var title1;
 		var title2;
-		
+	
+		$(function(){  				
+			 
+			var url = "<?= base_url() ?>index.php/home/setImages";				
+						
+			$.ajax({
+				type: 'get',
+				url: url,
+				success: function(img){
+					$("#reqresult").val(img);
+				}
+			}).done(function(){
+			
+							
+				objImage = jQuery.parseJSON($("#reqresult").val());
+				console.log(objImage);	
+				
+				img1 = objImage.imgSrc1;
+				img2 = objImage.imgSrc2;
+				title1 = img1.substring(0, img1.length - 4).split("-")[0];
+				title2 = img2.substring(0, img2.length - 4).split("-")[0];
+				
+				
+			   	$("#img1").attr("src", "images/"+img1);
+			    $("#img2").attr("src", "images/"+img2);
+			   	$("#item1").text(title1);		   	
+			   	$("#item2").text(title2);
+			   	$("#it1").val(title1);
+			   	$("#it2").val(title2);
+
+			   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
+				bn2 = img2.substring(0, img2.length - 4).split("-")[1].split("_")[1];
+			   	
+			   	
+			   	$("#blNum1").val(bn1);
+				$("#blNum2").val(bn2);
+			});
+
+
+			
+			
+				
+		  }); 
+
+	
 		
 	    function changeLang(){
 			language = "IT";
@@ -46,51 +90,6 @@
 			
 		}
     	
-		$(function(){  				
-			 
-			var url = "<?= base_url() ?>index.php/home/setImages";				
-						
-			$.ajax({
-				type: 'get',
-				url: url,
-				success: function(img){
-					$("#reqresult").val(img);
-				}
-			});
-
-
-			objImage = jQuery.parseJSON($("#reqresult").val());
-
-			img1 = objImage.imgSrc1;
-			img2 = objImage.imgSrc2;
-			title1 = img1.substring(0, img1.length - 4).split("-")[0];
-			title2 = img2.substring(0, img2.length - 4).split("-")[0];
-			
-			
-		   	$("#img1").attr("src", "images/"+img1);
-		    $("#img2").attr("src", "images/"+img2);
-		   	$("#item1").text(title1);		   	
-		   	$("#item2").text(title2);
-		   	$("#it1").val(title1)
-		   	$("#it2").val(title2)
-
-		   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
-			bn2 = img2.substring(0, img2.length - 4).split("-")[1].split("_")[1];
-		   	
-		   	
-		   	$("#blNum1").val(bn1)
-			$("#blNum2").val(bn2)
-		
-			$( "#answers" ).submit(function( event ) {
-				var frm = $("#answers");
-				var data = frm.serializeArray();
-				//alert("data: "+data);
-				//event.preventDefault();
-			});
-				
-		  }); 
-
-		
 		
 			
     </script>   
