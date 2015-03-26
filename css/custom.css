@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+
+.comeLeft{
+	margin-left: 0px;
+}
+
+.mgRight0{
+	padding-right: 0px;
+	
+	width: 480px;
+}
+
+strong{
+	position: realtive;
+	margin-left: 10px;	
+}
+
+#comeDown{
+	float: right;
+	margin-top: 5px;
+	width: 120px;
+	
+}
+
+.graySmall{
+	
+	font-size: 15px;
+	color: gray;
+	margin-bottom: 50px;
+}
+
+.comeDown{
+	
+	margin-top: 5px;
+	
+	
+}
+
+.tbproducts{
+	
+	margin-left:50px;
+}
