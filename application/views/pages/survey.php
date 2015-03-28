@@ -12,7 +12,7 @@
 			<div class="row">
 			<h2 id="item1"></h2>
 			<br>
-			<img alt="image1" src="" id="img1" width="550px">
+			<img alt="image1" src="" id="img1" width="350px">
 			<br><br>
 			
 			<fieldset>
@@ -61,7 +61,7 @@
 			<br>
 			
 			<!-- --------------------------------------SECOND ITEM------------------------------------------ -->
-			<img alt="image2" src="" id="img2" width="550px">
+			<img alt="image2" src="" id="img2" width="350px">
 			</div>
 			<fieldset>
 			<br><br>

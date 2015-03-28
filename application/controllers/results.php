@@ -8,7 +8,7 @@ class Results extends CI_Controller {
 	}
 	
 	public function view(){
-		
+		$this->load->model('record');
 		$this->load->model('record_model');
     	$results = $this->record_model->getAll();
     	$data['results']=$results;

@@ -35,11 +35,9 @@
 		var title2;
 	
 		$(function(){  				
-							
-			//adress to the method (in the server) that generates that 2 randomized imageg	 
+			 
 			var url = "<?= base_url() ?>index.php/home/setImages";				
 						
-			//this is the request to the server to grab the random images names
 			$.ajax({
 				type: 'get',
 				url: url,
@@ -48,36 +46,33 @@
 				}
 			}).done(function(){
 			
-				//here I am converting the request result from a string to a Json object			
+							
 				objImage = jQuery.parseJSON($("#reqresult").val());
-				
 				console.log(objImage);	
 				
 				img1 = objImage.imgSrc1;
 				img2 = objImage.imgSrc2;
-
 				title1 = img1.substring(0, img1.length - 4).split("-")[0];
 				title2 = img2.substring(0, img2.length - 4).split("-")[0];
 				
 				
 			   	$("#img1").attr("src", "images/"+img1);
-			    	$("#img2").attr("src", "images/"+img2);
-			   	
-				$("#item1").text(title1);		   	
+			    $("#img2").attr("src", "images/"+img2);
+			   	$("#item1").text(title1);		   	
 			   	$("#item2").text(title2);
-
-				//it1 = item1
 			   	$("#it1").val(title1);
 			   	$("#it2").val(title2);
 
-					
 			   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
 				bn2 = img2.substring(0, img2.length - 4).split("-")[1].split("_")[1];
 			   	
 			   	
 			   	$("#blNum1").val(bn1);
 				$("#blNum2").val(bn2);
-			});			
+			});
+
+
+			
 			
 				
 		  }); 
