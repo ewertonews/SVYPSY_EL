@@ -12,8 +12,7 @@
     <link href="<?=  base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?=  base_url(); ?>css/custom.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="<?=  base_url(); ?>css/shop-homepage.css" rel="stylesheet">
-    
+    <link href="<?=  base_url(); ?>css/shop-homepage.css" rel="stylesheet">    
      
      
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,69 +31,72 @@
 		var img1;
 		var img2;
 		var title1;
-		var title2;
-	
+		var title2;	
+
+		
 		$(function(){  				
-							
+			imgss = <?= $_SESSION['shufImages'] ?>;
+			//alert(imgss[0]);
 			//adress to the method (in the server) that generates that 2 randomized imageg	 
-			var url = "<?= base_url() ?>index.php/home/setImages";				
 						
-			//this is the request to the server to grab the random images names
-			$.ajax({
-				type: 'get',
-				url: url,
-				success: function(img){
-					$("#reqresult").val(img);
-				}
-			}).done(function(){
-			
-				//here I am converting the request result from a string to a Json object			
-				objImage = jQuery.parseJSON($("#reqresult").val());
-				
-				console.log(objImage);	
-				
-				img1 = objImage.imgSrc1;
-				img2 = objImage.imgSrc2;
+			img1 = imgss.pop();
 
-				title1 = img1.substring(0, img1.length - 4).split("-")[0];
-				title2 = img2.substring(0, img2.length - 4).split("-")[0];
-				
-				
-			   	$("#img1").attr("src", "images/"+img1);
-			    	$("#img2").attr("src", "images/"+img2);
-			   	
-				$("#item1").text(title1);		   	
-			   	$("#item2").text(title2);
+			alert(img1);
 
-				//it1 = item1
-			   	$("#it1").val(title1);
-			   	$("#it2").val(title2);
-
-					
-			   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
-				bn2 = img2.substring(0, img2.length - 4).split("-")[1].split("_")[1];
-			   	
-			   	
-			   	$("#blNum1").val(bn1);
-				$("#blNum2").val(bn2);
-			});			
-			
-				
-		  }); 
-
+			title1 = img1.substring(0, img1.length - 4).split("-")[0];
+		
+			$("#img1").attr("src", "images/"+img1);
+		   	
+			$("#item1").text(title1);		   	
 	
+		   	$("#it1").val(title1);
+		   	
+		   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
+			
+		   	$("#blNum1").val(bn1);
+			
+			$("#btnsend").click(function(){
+				
+				data = $("#answers").serializeArray();
+				var url = "<?= base_url() ?>index.php/home/createRecord";
+				$.ajax({
+					type: 'post',
+					url: url,
+					data: data,
+					success : function (){
+						console.log("well done my dear friend.");
+					}
+				}).done(function(){
+					img1 = imgss.pop();
+					//alert(img1);
+					title1 = img1.substring(0, img1.length - 4).split("-")[0];
+				
+					$("#img1").attr("src", "images/"+img1);
+				   	
+					$("#item1").text(title1);		   	
+			
+				   	$("#it1").val(title1);
+				   	
+				   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
+					
+				   	$("#blNum1").val(bn1);
+					
+				   	$('input[name=q1_1]').attr('checked',false);
+					console.log(imgss.length);					
+				});
+			});				
+		  });		  	
 		
 	    function changeLang(){
 			language = "IT";
 
 			title1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[0];
-			title2 = img2.substring(0, img2.length - 4).split("-")[1].split("_")[0];
+			//title2 = img2.substring(0, img2.length - 4).split("-")[1].split("_")[0];
 	
 		   	$("#item1").text(title1);		   	
-		   	$("#item2").text(title2);
+		   	//$("#item2").text(title2);
 			
-		}
-    	
+		}  	
 		
 			
     </script>   
@@ -138,11 +140,7 @@
                          <?php echo anchor('login/index', 'Log in', array('class' => 'a', 'id' => 'login'));?>
                          
                     </li>
-                    <li>
-                       <!-- <a href="#">Register</a>  -->
-                        
-                                               
-                    </li>
+                  
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
