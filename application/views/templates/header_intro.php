@@ -31,7 +31,7 @@
 		
 		$(function(){  				
 			$("#proceed").click(function(event){
-				alert("clicou proceed");
+				//alert("clicou proceed");
 				//event.preventDefault();
 			});
 					

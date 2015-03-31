@@ -1,7 +1,8 @@
 
 	<div class="container">
+		<?php echo base_url();?>
 		<div class="row">
-			<form class="form-horizontal" action="index.php/home/survey">
+			<form class="form-horizontal" action="<?= base_url() ?>index.php/home/survey">
 				<fieldset>
 				
 				<!-- Form Name -->

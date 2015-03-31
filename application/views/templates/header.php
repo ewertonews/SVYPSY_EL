@@ -46,6 +46,8 @@
 			title1 = img1.substring(0, img1.length - 4).split("-")[0];
 		
 			$("#img1").attr("src", "images/"+img1);
+
+			alert($("#img1").attr("src"));
 		   	
 			$("#item1").text(title1);		   	
 	
