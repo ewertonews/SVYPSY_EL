@@ -56,7 +56,9 @@ class Home extends CI_Controller {
 		$record->item_title = $this->input->get_post('itemTitle1');
 		$record->answer_q1 = $this->input->get_post('q1_1');
 		$record->answer_q2 = $this->input->get_post('q1_2');
-		$record->subject_id = $this->input->get_post('subjectId');
+		$record->subject_id = $this->input->get_post('sid');
+		$record->ageinfo = $this->input->get_post('ageInfo');
+		$record->schoolinfo = $this->input->get_post('schoolInfo');
 		
 		$category = null;
 		
@@ -82,16 +84,18 @@ class Home extends CI_Controller {
 		$this->load->model('record_model');
 		$this->load->model('record');
 		
-		$res = $this->record_model->getSubjectId();
+		$result = $this->record_model->newSubId();
 		
-		echo json_encode($res);
+		$newId = json_encode($result);
+		
+	    echo json_encode(array("sid"=>$newId));
 	}
 	
-	public function insertSubjectId(){
+	public function insertSubjectId($id){
 		$this->load->model('record_model');
 		$this->load->model('record');
 		
-		$id = $this->input->get_post('subId');
+		//$id = $this->input->get_post('subId');
 		
 		$this->record_model->newSubId($id);
 	}

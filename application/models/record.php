@@ -6,4 +6,6 @@ class Record{
 	public $answer_q2;
 	public $category;
 	public $subject_id;
+	public $ageinfo;
+	public $schoolinfo;
 }

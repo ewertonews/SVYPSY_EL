@@ -36,18 +36,19 @@
 		
 		$(function(){  				
 			imgss = <?= $_SESSION['shufImages'] ?>;
+			$("#survey").hide();
 			//alert(imgss[0]);
 			//adress to the method (in the server) that generates that 2 randomized imageg	 
 						
 			img1 = imgss.pop();
 
-			alert(img1);
+			//alert(img1);
 
 			title1 = img1.substring(0, img1.length - 4).split("-")[0];
 		
 			$("#img1").attr("src", "images/"+img1);
 
-			alert($("#img1").attr("src"));
+			
 		   	
 			$("#item1").text(title1);		   	
 	
@@ -103,7 +104,34 @@
 
 
 
-			$("#ttt").click(test());			
+			$("#proceed").click(function(event){
+				//alert("clicou proceed");
+				$("#schoolinfo").val($("#schoolInfo").val());
+				$("#ageInfo").val($("#age").val());
+				
+				//alert(initData);
+				event.preventDefault();
+				$.ajax({
+					type:'post',
+					url: "<?= base_url() ?>index.php/home/getLastSubjectId",
+					success: function(data){
+						info = JSON.parse(data)
+						
+						$("#formIntro").hide();						
+						
+						$("#sid").val(info.sid);
+						console.log(data);
+						$("#survey").show();
+						console.log("success!!!")
+						
+					}
+				});				
+
+				
+
+				
+			});
+					
 		  });		
 
 
