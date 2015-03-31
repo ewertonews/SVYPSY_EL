@@ -26,87 +26,20 @@
     <script src="<?=  base_url(); ?>js/jquery.js"></script>
 	<script type="text/javascript" src="<?=  base_url(); ?>js/html2csv.js" ></script>
     <script>
-		var language = "EN";
-		var objImage;
-		var img1;
-		var img2;
-		var title1;
-		var title2;	
 
+		
 		
 		$(function(){  				
-			imgss = <?= $_SESSION['shufImages'] ?>;
-			//alert(imgss[0]);
-			//adress to the method (in the server) that generates that 2 randomized imageg	 
-						
-			img1 = imgss.pop();
-
-			alert(img1);
-
-			title1 = img1.substring(0, img1.length - 4).split("-")[0];
-		
-			$("#img1").attr("src", "images/"+img1);
-		   	
-			$("#item1").text(title1);		   	
-	
-		   	$("#it1").val(title1);
-		   	
-		   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
-			
-		   	$("#blNum1").val(bn1);
-			
-			$("#answers").submit(function(event){
-				
-			data = $("#answers").serializeArray();
-			var url = "<?= base_url() ?>index.php/home/createRecord";
-			$.ajax({
-				type: 'post',
-				url: url,
-				data: data,
-				success : function (){
-					console.log("well done my dear friend.");
-				}
-			}).done(function(){
-
-				if(imgss.length > 0){
-
-					img1 = imgss.pop();
+			$("#proceed").click(function(event){
+				alert("clicou proceed");
+				//event.preventDefault();
+			});
 					
-					title1 = img1.substring(0, img1.length - 4).split("-")[0];
-				
-					$("#img1").attr("src", "images/"+img1);
-				   	
-					$("#item1").text(title1);		   	
-			
-				   	$("#it1").val(title1);
-				   	
-				   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
-					
-				   	$("#blNum1").val(bn1);
-					
-				   	$('input[name=q1_1]').attr('checked',false);
-					console.log(imgss.length);
-
-					$("#textinput").val("");	
-				}else{
-					$("#survey").hide();
-					alert("Valeu fera!");
-				}
-									
-				});
-
-				event.preventDefault();
-
-			});	
-
-
-
-			$("#ttt").click(test());			
-		  });		
+		 });		
 
 
 		  function test(){
-			  
+			  alert("chamou test");
 			  url = "<?= base_url() ?>index.php/home/getLastSubjectId";
 			  $.ajax({
 					type: 'get',

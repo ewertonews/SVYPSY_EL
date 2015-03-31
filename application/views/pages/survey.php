@@ -1,9 +1,5 @@
- <div id="lang">
- <a href="javascript:changeLang()" id="langText" class="">Questa pagina è in inglese. Clicca qui per cambiare per italiano</a>
- <br>
- </div>
 <div class="container">
-<div class="row">
+<div class="row" id="survey">
     <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 		
 		<form class="form-horizontal" id="answers" role="form"  action="<?= base_url() ?>index.php/home/createRecord">
@@ -53,14 +49,14 @@
 			<span class="graySmall">Please enter the full stop for separating dollars from cents (e.g. 2.50 for answering 2 dollars and 50 cents)	</span>
 			  <br>
 			  <div class="col-md-5">
-			  <input id="textinput" name="q1_2" required placeholder="2.50" class="form-control input-md comeDown" type="text">
+			  <input id="textinput" name="q1_2" required placeholder="0.00" class="form-control input-md comeDown" type="text">
 			  </div>
 			<br><br>
 			</fieldset>
 			
 			<br>		
 			
-				<div class="col-xs-12 col-md-6"><input id="btnsend" type="button"  value="Next" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+				<div class="col-xs-12 col-md-6"><input id="btnsend" type="submit"  value="Next" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
 				
 			</div>
 			<input type="hidden" id="blNum1" name="blNum1" value=""> 

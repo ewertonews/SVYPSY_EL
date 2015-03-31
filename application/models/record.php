@@ -4,4 +4,6 @@ class Record{
 	public $item_title;
 	public $answer_q1;
 	public $answer_q2;
+	public $category;
+	public $subject_id;
 }
