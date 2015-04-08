@@ -31,12 +31,15 @@
 		var img1;
 		var img2;
 		var title1;
-		var title2;	
+		var title2;
+		var curItem = 1;
 
 		
 		$(function(){  				
 			imgss = <?= $_SESSION['shufImages'] ?>;
 			$("#survey").hide();
+			$("#formIntro").hide();
+			$("#survey_info").hide();	
 			//alert(imgss[0]);
 			//adress to the method (in the server) that generates that 2 randomized imageg	 
 						
@@ -50,7 +53,11 @@
 
 			
 		   	
-			$("#item1").text(title1);		   	
+			$("#item1").text(title1);	
+
+			$("#current").text(curItem);
+
+			curItem = curItem + 1;	   	
 	
 		   	$("#it1").val(title1);
 		   	
@@ -79,7 +86,11 @@
 				
 					$("#img1").attr("src", "images/"+img1);
 				   	
-					$("#item1").text(title1);		   	
+					$("#item1").text(title1);	
+
+					$("#current").text(curItem);
+
+					curItem = curItem + 1;	   	
 			
 				   	$("#it1").val(title1);
 				   	
@@ -102,10 +113,18 @@
 
 			});	
 
-
+			$("#endconsent").click(function(){
+				$("#consent").hide();
+				$("#formIntro").show();	
+			});
 
 			$("#proceed").click(function(event){
-				//alert("clicou proceed");
+				$("#formIntro").hide();
+				$("#survey_info").show();	
+			});
+
+			$("#start_survey").click(function(event){
+				
 				$("#schoolinfo").val($("#schoolInfo").val());
 				$("#ageInfo").val($("#age").val());
 				
@@ -117,7 +136,7 @@
 					success: function(data){
 						info = JSON.parse(data)
 						
-						$("#formIntro").hide();						
+						$("#survey_info").hide();						
 						
 						$("#sid").val(info.sid);
 						console.log(data);
@@ -125,11 +144,7 @@
 						console.log("success!!!")
 						
 					}
-				});				
-
-				
-
-				
+				});	
 			});
 					
 		  });		

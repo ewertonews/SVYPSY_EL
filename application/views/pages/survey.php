@@ -1,27 +1,99 @@
 <div class="container">
-<!-- ============================== Survey instructions and initial for=========================== -->
+	<div class="row font-1" id="consent">
+		<h3>Consent</h3>
+		<br>
+		<p>You have been asked to participate in this preliminary survey as a healthy control with no known neurological symptoms. The present survey will ask you to estimate the prices of different items.</p>
+		<p>Your participation is voluntary. You may refuse to participate in the survey at any point in time. Each individual’s results are confidential. No identifying information will be collected from you in this survey. We would be happy to provide you with the final results of the study when they appear in press, if you are interested please contact Elena Bertossi at ebertossi@research.baycrest.org. If you wish to contact 	someone not connected with the project about your rights as a research participant, feel free to call Dr. Ron Heslegrave, Chair of the Research Ethics Board at (416) 785-2500 ext. 2440.</p>
+		<p>By clicking the "Next" button, you are providing consent that you understand that your participating is voluntary and that you may refuse to participate at any point in time during the survey. You also understand that no identifying information will be collected from you in this survey.</p>
+		<br>
+		
+		<button class="btn btn-primary" id="endconsent">Next</button>
+	</div>
+<!-- =================================================== Survey instructions and personal information ============================================ -->
 	<div class="row" id="intro">
 			<form class="form-horizontal" id="formIntro">
 				<fieldset>
 				
 				<!-- Form Name -->
-				<legend>Survey Instructions</legend>
-				
+				<legend>Welcome to the Item Pricing Questionnaire (IPQ) web page!</legend>
+				<div class="font-1">
+				<p>Please note: In order to participate in this study it is necessary to be fluent in English, to have been living in Canada for at least 5 years, and to be at least 40 years of age. </p>
+				<p>Please answer the next few questions with a number in the text box.</p>
+				</div>
+				<br>
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="schoolInfo">How many years have you studied?</label>  
+				  <label class="col-md-4 control-label" for="age">How old are you?</label>  
+				  <div class="col-md-4">
+				  <input id="age" name="age" placeholder="type a number" class="form-control input-md" type="text" required>
+				    
+				  </div>
+				</div>
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="schoolInfo">How many years of formal schooling have you completed?</label>
 				  <div class="col-md-4">
 				  <input id="schoolInfo" name="schoolInfo" placeholder="type a number" class="form-control input-md" required="" type="text">
-				    
+				  <span>(Including elementary and secondary schools, universities, colleges or other formal post-secondary institutions) </span>    
 				  </div>
 				</div>
 				
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="age">What is your age?</label>  
+				  <label class="col-md-4 control-label" for="age">How many years have you lived in Canada?</label>  
 				  <div class="col-md-4">
-				  <input id="age" name="age" placeholder="type a number" class="form-control input-md" type="text" required>
+				  <input id="livinginfo" name="livingInfo" placeholder="type a number" class="form-control input-md" type="text" required>
 				    
+				  </div>
+				</div>
+				
+				<div class="form-group">
+				  <label class="col-md-4 control-label comeLeft" for="gender">Gender</label>
+				  <div> 
+				    <label class="radio-inline" for="gender-M">
+				      <input name="gender" id="gender-M" value="M" required type="radio">
+				      Male
+				    </label> 
+				    <label class="radio-inline" for="gender-F">
+				      <input name="gender" id="gender-F" value="F" type="radio">
+				      Female
+				    </label>
+				  </div>
+				 </div>
+				 
+				 <div class="form-group">
+				  <label class="col-md-4 control-label comeLeft" for="groceryfreq">How often do you shop at a grocery store?</label>
+				  <div> 
+				    <label class="radio-inline" for="radios_grocery-0">
+				      <input name="groceryfreq" id="radios_grocery-0" value="never" required type="radio">
+				      Never
+				    </label> 
+				    <label class="radio-inline" for="radios_grocery-1">
+				      <input name="groceryfreq" id="radios_grocery-1" value="a few times a year" type="radio">
+				      A few times per year
+				    </label> 
+				    <label class="radio-inline" for="radios_grocery-2">
+				      <input name="groceryfreq" id="radios_grocery-2" value="a few times per month" type="radio">
+				      A few times per month
+				    </label> 
+				    <label class="radio-inline" for="radios_grocery-3">
+				      <input name="groceryfreq" id="radios_grocery-3" value="a few times per week" type="radio">
+				      A few times per week
+				    </label>
+				    <label class="radio-inline" for="radios_grocery-4">
+				      <input name="groceryfreq" id="radios_grocery-4" value="every day" type="radio">
+				      Every day
+				    </label>
+				   
+				  </div>			  
+				</div>
+				
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="lastshop">How many days ago did you shop at a grocery store last time?</label>
+				  <div class="col-md-4">
+				  <input id="lastshop" name="lastShop" placeholder="type a number" class="form-control input-md" required="" type="text">
+				  <span>(A response of 0 means you shopped at a grocery store today) </span>    
 				  </div>
 				</div>
 				
@@ -37,6 +109,22 @@
 				</form>
 			
 		</div>	
+		
+	<div class="row font-1" id="survey_info">
+		<p>We are interested in collecting information about how people associate items to a particular topic or situation (in this study we are using "shopping at a grocery store") and how they estimate the prices of items.</p>
+		<p>You will be presented with one item at a time. For each item, the first question is about how typical the item is to shopping at a grocery store and you will be required to provide an answer using a scale from1 = not at all typical (the item is not associated at all with shopping at a grocery store) to 5 = highly typical (the item is highly associated with shopping at a grocery store).</p>
+		<p>The second question involves estimating the price (in Canadian dollars) of the item and typing your estimated price in a text box.</p>
+		<p>After answering these two questions, please click the "NEXT" button to move on to the next item. At the end of the questionnaire a message will appear on the screen to let you know that you have completed the task successfully.</p>
+		<p>The questionnaire will take approximately 45 minutes.</p>
+		<p>Before starting the Item Pricing Questionnaire, try to imagine vividly in your mind, for a few seconds, what it is like to shop at a grocery store. Try to imagine in as much detail as possible both the items and actions involved in grocery shopping (e.g. going through the store, selecting items, getting to the cashiers etc.). After imagining that situation, you can begin to fill out the questionnaire. The names of items and their pictures will appear on the screen one by one along with two questions for each item. These questions are described below.</p>
+		<p>
+			<img alt="" src="<?php base_url()?>images/questions.png">
+		</p>
+		<br>
+		
+		<button class="btn btn-primary" id="start_survey">Start the Questionnaire</button>
+	</div>
+<!-- ======================================================== Survey questions =================================================================== -->
 	<div class="row" id="survey">	
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			
@@ -45,6 +133,7 @@
 				<hr class="colorgraph">
 				<div class="row">
 				<h2 id="item1"></h2>
+				<div id="currentitem"><span id="current"></span>/260</div>
 				<br>
 				<img alt="image1" src="" id="img1" width="380px">
 				<br><br>
@@ -84,7 +173,7 @@
 				</div>
 				 <h4>How much does it cost?<h4> 
 				<!-- Text input-->
-				<span class="graySmall">Please enter the full stop for separating dollars from cents (e.g. 2.50 for answering 2 dollars and 50 cents)	</span>
+				<span class="graySmall">(Please use a period to separate dollars from cents, e.g., 2.50 for two dollars and fifty cents)</span>
 				  <br>
 				  <div class="col-md-5">
 				  <input id="textinput" name="q1_2" required placeholder="0.00" class="form-control input-md comeDown" type="text">
