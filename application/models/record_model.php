@@ -10,7 +10,7 @@ class Record_model extends CI_Model {
 	
 	//function insert($first, $last, $login, $email, $password) {
 	function insert($record) {	
-		return $this->db->insert("survey_results", array('block_number' => $record->block_number, 'item_title' => $record->item_title, 'answer_q1' => $record->answer_q1, 'answer_q2' => $record->answer_q2, 'category'=>$record->category, 'subject_id'=>$record->subject_id,'age_info'=>$record->ageinfo,'school_info'=>$record->schoolinfo ));
+		return $this->db->insert("survey_results", array('block_number' => $record->block_number, 'item_title' => $record->item_title, 'answer_q1' => $record->answer_q1, 'answer_q2' => $record->answer_q2, 'category'=>$record->category, 'subject_id'=>$record->subject_id,'age_info'=>$record->ageinfo,'school_info'=>$record->schoolinfo, 'livinginfo'=>$record->livinginfo,'freqgroceryshopping'=>$record->freqgroceryshopping,'gender'=>$record->gender,'lastshop'=>$record->lastshop));
 	}
 	
 	function getSubjectId(){

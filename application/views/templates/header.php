@@ -39,7 +39,8 @@
 			imgss = <?= $_SESSION['shufImages'] ?>;
 			$("#survey").hide();
 			$("#formIntro").hide();
-			$("#survey_info").hide();	
+			$("#survey_info").hide();
+			$("#alertmsg").hide();	
 			//alert(imgss[0]);
 			//adress to the method (in the server) that generates that 2 randomized imageg	 
 						
@@ -104,7 +105,7 @@
 					$("#textinput").val("");	
 				}else{
 					$("#survey").hide();
-					alert("Valeu fera!");
+					$("#survey_end").show();
 				}
 									
 				});
@@ -118,15 +119,55 @@
 				$("#formIntro").show();	
 			});
 
-			$("#proceed").click(function(event){
-				$("#formIntro").hide();
-				$("#survey_info").show();	
+
+			$("#proceed").click(function() {
+			    var empty = $("#subjectInfo").children().find("input").filter(function() {
+			        return this.value === "";
+			    });
+			    if(empty.length) {
+			    	$("#alertmsg").show();
+			    }else{
+
+			    	$("#schoolinfo").val($("#schoolInfo").val());
+					$("#ageInfo").val($("#age").val());
+					$("#livingInfo").val($("#livinginfo").val());
+
+					
+					var selected = $("input[type='radio'][name='gender']:checked");
+				
+					if (selected.length > 0) {
+						$("#genderInfo").val(selected.val());
+					}	
+
+					var selected = $("input[type='radio'][name='groceryfreq']:checked");
+					
+					if (selected.length > 0) {
+						$("#freqGroceryShopping").val(selected.val());
+					}	
+
+				
+				    $("#lastShop").val($("#lastshop").val());
+					
+			    	
+					$("#formIntro").hide();
+					$("#survey_info").show();
+				}
 			});
+			/*$("#proceed").click(function( event ){
+
+				$('#subjectInfo').children().each(function(index, element) {
+				    console.log('element at index ' + index + 'is ' + (this.tagName));
+				});
+				
+				$("#formIntro").hide();
+				$("#survey_info").show();
+
+				
+			});*/
 
 			$("#start_survey").click(function(event){
 				
-				$("#schoolinfo").val($("#schoolInfo").val());
-				$("#ageInfo").val($("#age").val());
+				
 				
 				//alert(initData);
 				event.preventDefault();

@@ -8,4 +8,8 @@ class Record{
 	public $subject_id;
 	public $ageinfo;
 	public $schoolinfo;
+	public $livinginfo;
+	public $gender;
+	public $freqgroceryshopping;
+	public $lastshop;
 }

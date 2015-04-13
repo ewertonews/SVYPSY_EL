@@ -12,13 +12,18 @@
 <!-- =================================================== Survey instructions and personal information ============================================ -->
 	<div class="row" id="intro">
 			<form class="form-horizontal" id="formIntro">
-				<fieldset>
+				<fieldset id="subjectInfo">
 				
 				<!-- Form Name -->
 				<legend>Welcome to the Item Pricing Questionnaire (IPQ) web page!</legend>
 				<div class="font-1">
 				<p>Please note: In order to participate in this study it is necessary to be fluent in English, to have been living in Canada for at least 5 years, and to be at least 40 years of age. </p>
 				<p>Please answer the next few questions with a number in the text box.</p>
+				</div>
+				<div class="alert alert-danger" role="alert" id="alertmsg">
+				  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+				  <span class="sr-only">Error:</span>
+				  PLEASE FILL OUT ALL THE FIELDS
 				</div>
 				<br>
 				<!-- Text input-->
@@ -101,7 +106,7 @@
 				<div class="form-group">
 				  <label class="col-md-4 control-label" for="proceed"></label>
 				  <div class="col-md-4">
-				    <button id="proceed" name="proceed" class="btn btn-primary">Proceed</button>
+				    <button id="proceed" type="button" name="proceed" class="btn btn-primary">Proceed</button>
 				  </div>
 				</div>
 				
@@ -109,7 +114,7 @@
 				</form>
 			
 		</div>	
-		
+<!-- ======================================================== pre survey ======================================================================= -->		
 	<div class="row font-1" id="survey_info">
 		<p>We are interested in collecting information about how people associate items to a particular topic or situation (in this study we are using "shopping at a grocery store") and how they estimate the prices of items.</p>
 		<p>You will be presented with one item at a time. For each item, the first question is about how typical the item is to shopping at a grocery store and you will be required to provide an answer using a scale from1 = not at all typical (the item is not associated at all with shopping at a grocery store) to 5 = highly typical (the item is highly associated with shopping at a grocery store).</p>
@@ -183,17 +188,28 @@
 				
 				<br>		
 				
-					<div class="col-xs-12 col-md-6"><input id="btnsend" type="submit"  value="Next" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+					<div class="col-xs-12 col-md-6"><input id="btnsend" value="Next" type="submit" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
 					
 				</div>
 				<input type="hidden" id="blNum1" name="blNum1" value="">				
 				<input type="hidden" id="it1" name="itemTitle1" value="">
 				<input type="hidden" id="schoolinfo" name="schoolinfo" value=""> 
 				<input type="hidden" id="ageInfo" name="ageInfo" value="">
-				<input type="hidden" id="sid" name="sid" value="">   
+				<input type="hidden" id="livingInfo" name="livinginfo" value="">
+				<input type="hidden" id="genderInfo" name="genderinfo" value="">
+				<input type="hidden" id="freqGroceryShopping" name="freqgroceryshopping" value="">
+				<input type="hidden" id="lastShop" name="lastshop" value="">
 				
+				<input type="hidden" id="sid" name="sid" value="">
+								
 	
 			</form>
 		</div>
+	</div>
+	
+		<div class="row font-1" id="survey_end">
+		<p>
+			<h2>"The questionnaire is ended. Thanks for your collaboration!"</h2>
+		</p>
 	</div>
 </div>

@@ -58,7 +58,16 @@ class Home extends CI_Controller {
 		$record->answer_q2 = $this->input->get_post('q1_2');
 		$record->subject_id = $this->input->get_post('sid');
 		$record->ageinfo = $this->input->get_post('ageInfo');
-		$record->schoolinfo = $this->input->get_post('schoolInfo');
+		$record->schoolinfo = $this->input->get_post('schoolinfo');
+		$record->freqgroceryshopping = $this->input->get_post('freqgroceryshopping');
+		$record->livinginfo = $this->input->get_post('livinginfo');
+		$record->gender = $this->input->get_post('genderinfo');
+		$record->lastshop = $this->input->get_post('lastshop');
+		
+		
+		
+		
+		
 		
 		$category = null;
 		
