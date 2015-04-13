@@ -209,7 +209,7 @@
 	
 		<div class="row font-1" id="survey_end">
 		<p>
-			<h2>"The questionnaire is ended. Thanks for your collaboration!"</h2>
+			<h2>The questionnaire is ended. Thanks for your collaboration!</h2>
 		</p>
 	</div>
 </div>

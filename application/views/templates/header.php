@@ -40,7 +40,8 @@
 			$("#survey").hide();
 			$("#formIntro").hide();
 			$("#survey_info").hide();
-			$("#alertmsg").hide();	
+			$("#alertmsg").hide();
+			$("#survey_end").hide();	
 			//alert(imgss[0]);
 			//adress to the method (in the server) that generates that 2 randomized imageg	 
 						
@@ -153,17 +154,7 @@
 					$("#survey_info").show();
 				}
 			});
-			/*$("#proceed").click(function( event ){
 
-				$('#subjectInfo').children().each(function(index, element) {
-				    console.log('element at index ' + index + 'is ' + (this.tagName));
-				});
-				
-				$("#formIntro").hide();
-				$("#survey_info").show();
-
-				
-			});*/
 
 			$("#start_survey").click(function(event){
 				
