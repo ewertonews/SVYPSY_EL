@@ -42,6 +42,7 @@
 			$("#survey_info").hide();
 			$("#alertmsg").hide();
 			$("#survey_end").hide();	
+			$("#ad").hide();	
 			//alert(imgss[0]);
 			//adress to the method (in the server) that generates that 2 randomized imageg	 
 						
@@ -155,6 +156,20 @@
 				}
 			});
 
+			$("#about").click(function(){				
+				$("#survey").hide();
+				$("#formIntro").hide();
+				$("#survey_info").hide();
+				$("#alertmsg").hide();
+				$("#survey_end").hide();	
+				$("#ad").show();
+			});
+
+			$("#backtosurvey").click(function(){				
+				$("#formIntro").show();	
+				$("#ad").hide();
+			});
+
 
 			$("#start_survey").click(function(event){
 				
@@ -218,7 +233,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a id="ttt" href="#">About</a>
+                        <a href="#" data-toggle="modal" data-target="#t_and_c_m">About</a>
                     </li>
                     <li>
                        

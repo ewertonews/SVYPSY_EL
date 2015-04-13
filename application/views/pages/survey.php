@@ -211,5 +211,26 @@
 		<p>
 			<h2>The questionnaire is ended. Thanks for your collaboration!</h2>
 		</p>
-	</div>
+		</div>
+		
+			<!-- Modal -->
+			<div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">�</button>
+							<h4 class="modal-title" id="myModalLabel">About</h4>
+						</div>
+						<div class="modal-body">
+							<h4>
+								This is a simple solution designed for a specific objective, in this case a survey with functionalities that Google forms, for example, cannot provide. Contact me at <strong><a href="mailto:ewertonews@hotmail.com?Subject=Web solution request" target="_top">ewertonews@hotmail.com</a></strong> if you would like to acquire one similar solution for your survey or any other purpose.
+							</h4>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-dismiss="modal">Go Back</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+		
 </div>
