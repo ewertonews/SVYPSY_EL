@@ -30,4 +30,4 @@
 		echo "</div>";
 ?>	
 <br>
-<input value="Export as CSV" type="button" onclick="$('#listResults').table2CSV({header:['Block Number','Item Name','Answer q1','Answer q2','Gender','Years in School','Years living in Canada','Grocery shopping frequency','Last shop']})">
+<input value="Export as CSV" type="button" onclick="$('#listResults').table2CSV({header:['Block Number','Category','Item Name','Answer q1','Answer q2','Subject ID','Gender','Age','Years in School','Years living in Canada','Grocery shopping frequency','Last shop']})">

@@ -33,6 +33,7 @@
 		var title1;
 		var title2;
 		var curItem = 1;
+		var curIndex = 0;
 
 		
 		$(function(){  				
@@ -43,24 +44,22 @@
 			$("#alertmsg").hide();
 			$("#survey_end").hide();	
 			$("#ad").hide();	
-			//alert(imgss[0]);
-			//adress to the method (in the server) that generates that 2 randomized imageg	 
-						
-			img1 = imgss.pop();
 
+						
+			img1 = imgss[curIndex];
+			console.log(curIndex);
 			//alert(img1);
 
 			title1 = img1.substring(0, img1.length - 4).split("-")[0];
 		
-			$("#img1").attr("src", "images/"+img1);
+			$("#img1").attr("src", "<?=  base_url(); ?>images/"+img1);
 
-			
-		   	
 			$("#item1").text(title1);	
 
 			$("#current").text(curItem);
 
-			curItem = curItem + 1;	   	
+			curItem = curItem + 1;	
+			curIndex = curIndex + 1;   	
 	
 		   	$("#it1").val(title1);
 		   	
@@ -68,51 +67,54 @@
 			
 		   	$("#blNum1").val(bn1);
 			
+
 			$("#answers").submit(function(event){
 				
-			data = $("#answers").serializeArray();
-			var url = "<?= base_url() ?>index.php/home/createRecord";
-			$.ajax({
-				type: 'post',
-				url: url,
-				data: data,
-				success : function (){
-					console.log("well done my dear friend.");
-				}
-			}).done(function(){
-
-				if(imgss.length > 0){
-
-					img1 = imgss.pop();
+				data = $("#answers").serializeArray();
+				var url = "<?= base_url() ?>index.php/home/createRecord";
+				$.ajax({
+					type: 'post',
+					url: url,
+					data: data,
+					success : function (){
+						console.log("well done my dear friend.");
+					}
+				}).done(function(){
+	
+					if(curIndex < imgss.length){
+	
+						img1 = imgss[curIndex];
+						console.log(curIndex);
+						
+						title1 = img1.substring(0, img1.length - 4).split("-")[0];
 					
-					title1 = img1.substring(0, img1.length - 4).split("-")[0];
+						$("#img1").attr("src", "<?=  base_url(); ?>images/"+img1);
+					   	
+						$("#item1").text(title1);	
+	
+						$("#current").text(curItem);
+	
+						curItem = curItem + 1;
+						curIndex = curIndex + 1;	   	
 				
-					$("#img1").attr("src", "images/"+img1);
-				   	
-					$("#item1").text(title1);	
-
-					$("#current").text(curItem);
-
-					curItem = curItem + 1;	   	
-			
-				   	$("#it1").val(title1);
-				   	
-				   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
-					
-				   	$("#blNum1").val(bn1);
-					
-				   	$('input[name=q1_1]').attr('checked',false);
-					console.log(imgss.length);
-
-					$("#textinput").val("");	
-				}else{
-					$("#survey").hide();
-					$("#survey_end").show();
-				}
-									
-				});
-
-				event.preventDefault();
+					   	$("#it1").val(title1);
+					   	
+					   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
+						
+					   	$("#blNum1").val(bn1);
+						
+					   	$('input[name=q1_1]').attr('checked',false);
+						console.log(imgss.length);
+	
+						$("#textinput").val("");	
+					}else{
+						$("#survey").hide();
+						$("#survey_end").show();
+					}
+										
+					});
+	
+					event.preventDefault();
 
 			});	
 
@@ -155,21 +157,6 @@
 					$("#survey_info").show();
 				}
 			});
-
-			$("#about").click(function(){				
-				$("#survey").hide();
-				$("#formIntro").hide();
-				$("#survey_info").hide();
-				$("#alertmsg").hide();
-				$("#survey_end").hide();	
-				$("#ad").show();
-			});
-
-			$("#backtosurvey").click(function(){				
-				$("#formIntro").show();	
-				$("#ad").hide();
-			});
-
 
 			$("#start_survey").click(function(event){
 				
