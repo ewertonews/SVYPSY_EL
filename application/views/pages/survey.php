@@ -118,7 +118,7 @@
 	<div class="row font-1" id="survey_info">
 		<p>We are interested in collecting information about how people associate items to a particular topic or situation (in this study we are using "shopping at a grocery store") and how they estimate the prices of items.</p>
 		<p>You will be presented with one item at a time. For each item, the first question is about how typical the item is to shopping at a grocery store and you will be required to provide an answer using a scale from 1 = not at all typical (the item is not associated at all with shopping at a grocery store) to 5 = highly typical (the item is highly associated with shopping at a grocery store).</p>
-		<p>The second question involves estimating the price (in Canadian dollars) of the item and typing your estimated price in a text box.</p>0
+		<p>The second question involves estimating the price (in Canadian dollars) of the item and typing your estimated price in a text box.</p>
 		<p>After answering these two questions, please click the "NEXT" button to move on to the next item. At the end of the questionnaire a message will appear on the screen to let you know that you have completed the task successfully.</p>
 		<p>The questionnaire will take approximately 45 minutes.</p>
 		<p>Before starting the Item Pricing Questionnaire, try to imagine vividly in your mind, for a few seconds, what it is like to shop at a grocery store. Try to imagine in as much detail as possible both the items and actions involved in grocery shopping (e.g. going through the store, selecting items, getting to the cashiers etc.). After imagining that situation, you can begin to fill out the questionnaire. The names of items and their pictures will appear on the screen one by one along with two questions for each item. These questions are described below.</p>
@@ -144,7 +144,7 @@
 				<br><br>
 				
 				<fieldset>
-				<h4>How this item is related to "shopping at a grocery store"? *</h4>
+				<h4>How this item is related to "shopping at a grocery store"?</h4>
 				
 				<!-- Multiple Radios (inline) -->
 				<div class="form-group">
