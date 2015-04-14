@@ -144,11 +144,11 @@
 				<br><br>
 				
 				<fieldset>
-				<h4>How this item is related to "shopping at a grocery store"?</h4>
+				<h4>How typical is this item when shopping at a grocery store?</h4>
 				
 				<!-- Multiple Radios (inline) -->
 				<div class="form-group">
-				  <label class="col-md-3 control-label comeLeft" for="q1_1">Not at all related</label>
+				  <label class="col-md-3 control-label comeLeft" for="q1_1">Not at all typical</label>
 				  <div class="mgRight0"> 
 				    <label class="radio-inline" for="radios-0">
 				      <input name="q1_1" id="radios-0" value="1" required type="radio">
@@ -171,12 +171,12 @@
 				      5
 				    </label>
 				    <div id="comeDown">
-				    	<strong>Hightly related</strong>
+				    	<strong>Highly typical</strong>
 				    </div>
 				    <br><br>
 				  </div>			  
 				</div>
-				 <h4>How much does it cost?<h4> 
+				 <h4>How much do you think this item costs?<h4> 
 				<!-- Text input-->
 				<span class="graySmall">(Please use a period to separate dollars from cents, e.g., 2.50 for two dollars and fifty cents)</span>
 				  <br>
