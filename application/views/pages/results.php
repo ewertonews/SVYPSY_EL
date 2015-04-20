@@ -4,7 +4,7 @@
 		
  	  
 		echo "<table id='listResults' class='orders'>";
-		echo "<tr><th>Block Number</th><th>Category</th><th>Item name</th><th>Answer q1</th><th>Answer q2</th><th>Subject ID</th><th>Gender</th><th>Age</th><th>Years in School</th><th>Years living in Canada</th><th>Grocery shopping frequency</th><th>Last shop</th>";
+		echo "<tr><th>Block Number</th><th>Category</th><th>Item name</th><th>Answer q1</th><th>Answer q2</th><th>Subject ID</th><th>Gender</th><th>Age</th><th>Years in School</th><th>Years living in Canada</th><th>Grocery shopping frequency</th><th>Last shop</th><th>Language</th>";
 		
 		foreach ($results as $result) {
 			echo "<tr>";
@@ -21,6 +21,7 @@
 			echo "<td>" .$result->livinginfo . "</td>";
 			echo "<td>" .$result->freqgroceryshopping . "</td>";
 			echo "<td>" .$result->lastshop . "</td>";
+			echo "<td>" .$result->language . "</td>";
 		
 			
 			
@@ -30,4 +31,4 @@
 		echo "</div>";
 ?>	
 <br>
-<input value="Export as CSV" type="button" onclick="$('#listResults').table2CSV({header:['Block Number','Category','Item Name','Answer q1','Answer q2','Subject ID','Gender','Age','Years in School','Years living in Canada','Grocery shopping frequency','Last shop']})">
+<input value="Export as CSV" type="button" onclick="$('#listResults').table2CSV({header:['Block Number','Category','Item Name','Answer q1','Answer q2','Subject ID','Gender','Age','Years in School','Years living in Canada','Grocery shopping frequency','Last shop','Language']})">
