@@ -13,4 +13,6 @@ class Record{
 	public $gender;
 	public $freqgroceryshopping;
 	public $lastshop;
+	public $language;
+	
 }

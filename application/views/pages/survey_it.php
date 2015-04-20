@@ -1,13 +1,13 @@
 <div class="container">
 	<div class="row font-1" id="consent">
-		<h3>Consent</h3>
+		<h3>Consenso</h3>
 		<br>
-		<p>You have been asked to participate in this preliminary survey as a healthy control with no known neurological symptoms. The present survey will ask you to estimate the prices of different items.</p>
-		<p>Your participation is voluntary. You may refuse to participate in the survey at any point in time. Each individual’s results are confidential. No identifying information will be collected from you in this survey. We would be happy to provide you with the final results of the study when they appear in press, if you are interested please contact Elena Bertossi at ebertossi@research.baycrest.org. If you wish to contact 	someone not connected with the project about your rights as a research participant, feel free to call Dr. Ron Heslegrave, Chair of the Research Ethics Board at (416) 785-2500 ext. 2440.</p>
-		<p>By clicking the "Next" button, you are providing consent that you understand that your participating is voluntary and that you may refuse to participate at any point in time during the survey. You also understand that no identifying information will be collected from you in this survey.</p>
+		<p>Ti è stato chiesto di partecipare a questo sondaggio preliminare in qualità di persona in salute e senza sintomi neurologici conosciuti. Nel presente sondaggio ti verrà chiesto di stimare i prezzi di diversi prodotti.</p>
+		<p>La tua partecipazione è volontaria. Durante il sondaggio puoi rifiutarti di partecipare in qualsiasi momento. I risultati di ogni partecipante sono considerati come informazioni confidenziali. In questo sondaggio non verrà richiesta nessuna informazione identificativa. Saremo lieti di fornirti i risultati finali quando verranno elaborati e pubblicati, se interessato/a puoi contattare Elena Bertossi a ebertossi@research.baycrest.org, che sarà disponibile anche rispondere ad eventuali domande e chiarimenti.</p>
+		<p>Cliccando il pulsante "AVANTI", acconsenti al fatto di aver compreso che la tua partecipazione è volontaria, puoi rifiutarti di partecipare in qualsiasi momento durante il sondaggio e che nessuna informazione identificativa verrà raccolta. </p>
 		<br>
 		
-		<button class="btn btn-primary" id="endconsent">Next</button>
+		<button class="btn btn-primary" id="endconsent">Avanti</button>
 	</div>
 <!-- =================================================== Survey instructions and personal information ============================================ -->
 	<div class="row" id="intro">
@@ -15,20 +15,20 @@
 				<fieldset id="subjectInfo">
 				
 				<!-- Form Name -->
-				<legend>Welcome to the Item Pricing Questionnaire (IPQ) web page!</legend>
+				<legend>Benvenuto/a nella pagina del questionario della valutazione di prezzi dei prodotti!</legend>
 				<div class="font-1">
-				<p>Please note: In order to participate in this study it is necessary to be fluent in English, to have been living in Canada for at least 5 years, and to be at least 40 years of age. </p>
-				<p>Please answer the next few questions with a number in the text box.</p>
+				<p>Per favore nota che: per partecipare a questo studio è necessario conosce bene la lingua italiana, aver vissuto in Italia per almeno 5 anni ed avere almeno 40 anni di età.</p>
+				<p>Per favore, per le prossime domande in cui viene richiesta una risposta da inserire nella casella di testo usa le cifre numeriche. </p>
 				</div>
 				<div class="alert alert-danger" role="alert" id="alertmsg">
 				  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
 				  <span class="sr-only">Error:</span>
-				  PLEASE FILL OUT ALL THE FIELDS
+				 COMPILARE TUTTI I CAMPI
 				</div>
 				<br>
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="age">How old are you?</label>  
+				  <label class="col-md-4 control-label" for="age">Quanti anni hai?</label>  
 				  <div class="col-md-4">
 				  <input id="age" name="age" placeholder="type a number" class="form-control input-md" type="text" required>
 				    
@@ -36,16 +36,16 @@
 				</div>
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="schoolInfo">How many years of formal schooling have you completed?</label>
+				  <label class="col-md-4 control-label" for="schoolInfo">Quanti anni di scuola hai completato?</label>
 				  <div class="col-md-4">
 				  <input id="schoolInfo" name="schoolInfo" placeholder="type a number" class="form-control input-md" required="" type="text">
-				  <span>(Including elementary and secondary schools, universities, colleges or other formal post-secondary institutions) </span>    
+				  <span>(Includendo le scuole elementari, medie e superiori, università, o altri tipi di istituti scolastici riconosciuti) </span>    
 				  </div>
 				</div>
 				
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="age">How many years have you lived in Canada?</label>  
+				  <label class="col-md-4 control-label" for="age">Da quanti anni vivi in Italia?</label>  
 				  <div class="col-md-4">
 				  <input id="livinginfo" name="livingInfo" placeholder="type a number" class="form-control input-md" type="text" required>
 				    
@@ -53,41 +53,41 @@
 				</div>
 				
 				<div class="form-group">
-				  <label class="col-md-4 control-label comeLeft" for="gender">Gender</label>
+				  <label class="col-md-4 control-label comeLeft" for="gender">Sesso</label>
 				  <div> 
 				    <label class="radio-inline" for="gender-M">
 				      <input name="gender" id="gender-M" value="M" required type="radio">
-				      Male
+				      Maschio
 				    </label> 
 				    <label class="radio-inline" for="gender-F">
 				      <input name="gender" id="gender-F" value="F" type="radio">
-				      Female
+				      Femmina
 				    </label>
 				  </div>
 				 </div>
 				 
 				 <div class="form-group">
-				  <label class="col-md-4 control-label comeLeft" for="groceryfreq">How often do you shop at a grocery store?</label>
+				  <label class="col-md-4 control-label comeLeft" for="groceryfreq">Quanto spesso fai la spesa al supermercato?</label>
 				  <div> 
 				    <label class="radio-inline" for="radios_grocery-0">
 				      <input name="groceryfreq" id="radios_grocery-0" value="never" required type="radio">
-				      Never
+				      Mai
 				    </label> 
 				    <label class="radio-inline" for="radios_grocery-1">
 				      <input name="groceryfreq" id="radios_grocery-1" value="a few times a year" type="radio">
-				      A few times per year
+				      Qualche volta all'anno
 				    </label> 
 				    <label class="radio-inline" for="radios_grocery-2">
 				      <input name="groceryfreq" id="radios_grocery-2" value="a few times per month" type="radio">
-				      A few times per month
+				      Qualche volta al mese
 				    </label> 
 				    <label class="radio-inline" for="radios_grocery-3">
 				      <input name="groceryfreq" id="radios_grocery-3" value="a few times per week" type="radio">
-				      A few times per week
+				      Qualche volta a settimana
 				    </label>
 				    <label class="radio-inline" for="radios_grocery-4">
 				      <input name="groceryfreq" id="radios_grocery-4" value="every day" type="radio">
-				      Every day
+				      Ogni giorno
 				    </label>
 				   
 				  </div>			  
@@ -95,10 +95,10 @@
 				
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="lastshop">How many days ago did you shop at a grocery store last time?</label>
+				  <label class="col-md-4 control-label" for="lastshop">Quanti giorni fa hai fatto la spesa al supermercato per l'ultima volta?</label>
 				  <div class="col-md-4">
 				  <input id="lastshop" name="lastShop" placeholder="type a number" class="form-control input-md" required="" type="text">
-				  <span>(A response of 0 means you shopped at a grocery store today) </span>    
+				  <span>(Se inserisci 0 significa che hai fatto la spesa per l'ultima volta oggi stesso) </span>    
 				  </div>
 				</div>
 				
@@ -106,7 +106,7 @@
 				<div class="form-group">
 				  <label class="col-md-4 control-label" for="proceed"></label>
 				  <div class="col-md-4">
-				    <button id="proceed" type="button" name="proceed" class="btn btn-primary">Proceed</button>
+				    <button id="proceed" type="button" name="proceed" class="btn btn-primary">Avanti</button>
 				  </div>
 				</div>
 				
@@ -116,25 +116,26 @@
 		</div>	
 <!-- ======================================================== pre survey ======================================================================= -->		
 	<div class="row font-1" id="survey_info">
-		<p>We are interested in collecting information about how people associate items to a particular topic or situation (in this study we are using "shopping at a grocery store") and how they estimate the prices of items.</p>
-		<p>You will be presented with one item at a time. For each item, the first question is about how typical the item is to shopping at a grocery store and you will be required to provide an answer using a scale from 1 = not at all typical (the item is not associated at all with shopping at a grocery store) to 5 = highly typical (the item is highly associated with shopping at a grocery store).</p>
-		<p>The second question involves estimating the price (in Canadian dollars) of the item and typing your estimated price in a text box.</p>
-		<p>After answering these two questions, please click the "NEXT" button to move on to the next item. At the end of the questionnaire a message will appear on the screen to let you know that you have completed the task successfully.</p>
-		<p>The questionnaire will take approximately 45 minutes.</p>
-		<p>Before starting the Item Pricing Questionnaire, try to imagine vividly in your mind, for a few seconds, what it is like to shop at a grocery store. Try to imagine in as much detail as possible both the items and actions involved in grocery shopping (e.g. going through the store, selecting items, getting to the cashiers etc.). After imagining that situation, you can begin to fill out the questionnaire. The names of items and their pictures will appear on the screen one by one along with two questions for each item. These questions are described below.</p>
+		<p>Siamo interessati a raccogliere informazioni su come le persone associano gli oggetti ad un particolare tema o ad una particolare situazione (in questo studio useremo la situaziona di "fare la spesa al supermercato") e a come stimano i prezzi degli oggetti stessi.</p>
+		<p>Ti verrà presentato un prodotto alla volta. Per ciascun prodotto, la prima domanda sarà su quanto tipico è il prodotto quando si fa la spesa al supermercato e ti verrà richiesto di fornire una risposta usando una scala da 1 = per niente tipico (il prodotto non è associato per niente con il fare la spesa al supermercato) a 5 = molto tipico (il prodotto è fortemente associato con il fare la spesa al supermercato).</p>
+		<p>La seconda domanda riguarda lo stimare il prezzo (in euro) del prodotto e scrivere il prezzo nella casella di testo.</p>
+		<p>Dopo aver risposto a queste due domande, per favore clicca il pulsante "AVANTI" per far apparire il prossimo prodotto. Alla fine del questionario un messaggio apparirà sullo schermo per farti sapere che hai completato con successo il compito.</p>
+		<p>Il questionario durerà circa 45 minuti.</p>
+		<p>Prima di cominciare il questionario della valutazione di prezzi dei prodotti, cerca di immaginare in maniera vivida nella tua mente, per alcuni secondi, com'è fare la spesa al supermercato. Cerca di immaginare con più dettagli possibili i prodotti e le azioni che riguardano fare la spesa al supermercato (ad es. andare al supermercato, scegliere i prodotti, andare alla cassa etc.). Dopo aver immaginato la situazione, puoi cominciare a compilare il questionario. I nomi dei prodotti e le loro immagini appariranno sullo schermo uno ad uno con due domande per ciascun prodotto. Queste domande sono descritte di seguito.</p>
 		<p>
-			<img alt="" src="<?php base_url()?>images/questions.png">
+			<img alt="" src="<?php echo substr((string)base_url(), 0, -1);?>/images/questions_it.png">
+			
 		</p>
 		<br>
 		
-		<button class="btn btn-primary" id="start_survey">Start the Questionnaire</button>
+		<button class="btn btn-primary" id="start_survey">Inizia il Questionario</button>
 	</div>
 <!-- ======================================================== Survey questions =================================================================== -->
 	<div class="row" id="survey">	
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			
 			<form class="form-horizontal" id="answers" role="form"  action="<?= base_url() ?>index.php/home/createRecord">
-				<h2> Items and Prices Questionnaire </h2>
+				<h2>Articoli e Prezzi Questionario</h2>
 				<hr class="colorgraph">
 				<div class="row">
 				<h2 id="item1"></h2>
@@ -144,11 +145,11 @@
 				<br><br>
 				
 				<fieldset>
-				<h4>How typical is this item when shopping at a grocery store?</h4>
+				<h4>Quanto è tipico questo prodotto quando si fa la spesa al supermercato?</h4>
 				
 				<!-- Multiple Radios (inline) -->
 				<div class="form-group">
-				  <label class="col-md-3 control-label comeLeft" for="q1_1">Not at all typical</label>
+				  <label class="col-md-3 control-label comeLeft" for="q1_1">Per niente tipico</label>
 				  <div class="mgRight0"> 
 				    <label class="radio-inline" for="radios-0">
 				      <input name="q1_1" id="radios-0" value="1" required type="radio">
@@ -171,14 +172,14 @@
 				      5
 				    </label>
 				    <div id="comeDown">
-				    	<strong>Highly typical</strong>
+				    	<strong>Molto tipico</strong>
 				    </div>
 				    <br><br>
 				  </div>			  
 				</div>
-				 <h4>How much do you think this item costs?<h4> 
+				 <h4>Quanto pensi possa costare questo prodotto?<h4> 
 				<!-- Text input-->
-				<span class="graySmall">(Please use a period to separate dollars from cents, e.g., 2.50 for two dollars and fifty cents)</span>
+				<span class="graySmall">(Per favore, usa il punto per separare gli euro dai centesimi, per esempio 2.50 per due euro e cinquanta centesimi)</span>
 				  <br>
 				  <div class="col-md-5">
 				  <input id="textinput" name="q1_2" required placeholder="0.00" class="form-control input-md comeDown" type="text">
@@ -201,7 +202,7 @@
 				<input type="hidden" id="lastShop" name="lastshop" value="">
 				
 				<input type="hidden" id="sid" name="sid" value="">
-				<input type="hidden" id="lang" name="lang" value="english">
+				<input type="hidden" id="lang" name="lang" value="italian">
 								
 	
 			</form>
