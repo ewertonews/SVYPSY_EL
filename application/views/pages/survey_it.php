@@ -2,8 +2,8 @@
 	<div class="row font-1" id="consent">
 		<h3>Consenso</h3>
 		<br>
-		<p>Ti è stato chiesto di partecipare a questo sondaggio preliminare in qualità di persona in salute e senza sintomi neurologici conosciuti. Nel presente sondaggio ti verrà chiesto di stimare i prezzi di diversi prodotti.</p>
-		<p>La tua partecipazione è volontaria. Durante il sondaggio puoi rifiutarti di partecipare in qualsiasi momento. I risultati di ogni partecipante sono considerati come informazioni confidenziali. In questo sondaggio non verrà richiesta nessuna informazione identificativa. Saremo lieti di fornirti i risultati finali quando verranno elaborati e pubblicati, se interessato/a puoi contattare Elena Bertossi a ebertossi@research.baycrest.org, che sarà disponibile anche rispondere ad eventuali domande e chiarimenti.</p>
+		<p>Ti viene chiesto di partecipare a questo sondaggio preliminare in qualità di persona in salute e senza sintomi neurologici conosciuti. Durante il sondaggio ti verrà chiesto di stimare i prezzi di diversi prodotti.</p>
+		<p>La tua partecipazione è volontaria e puoi rifiutarti di svolgere il sondaggio in qualsiasi momento. I risultati di ogni partecipante sono considerati informazioni confidenziali e non verrà richiesta nessuna informazione identificativa. Saremo lieti di fornirti i risultati finali quando verranno elaborati e pubblicati, se interessato/a puoi contattare Elena Bertossi a ebertossi@research.baycrest.org, che sarà disponibile anche rispondere ad eventuali domande e chiarimenti.</p>
 		<p>Cliccando il pulsante "AVANTI", acconsenti al fatto di aver compreso che la tua partecipazione è volontaria, puoi rifiutarti di partecipare in qualsiasi momento durante il sondaggio e che nessuna informazione identificativa verrà raccolta. </p>
 		<br>
 		
@@ -17,8 +17,8 @@
 				<!-- Form Name -->
 				<legend>Benvenuto/a nella pagina del questionario della valutazione di prezzi dei prodotti!</legend>
 				<div class="font-1">
-				<p>Per favore nota che: per partecipare a questo studio è necessario conosce bene la lingua italiana, aver vissuto in Italia per almeno 5 anni ed avere almeno 40 anni di età.</p>
-				<p>Per favore, per le prossime domande in cui viene richiesta una risposta da inserire nella casella di testo usa le cifre numeriche. </p>
+				<p>Per favore nota che: per partecipare a questo studio è necessario conoscere bene la lingua italiana, aver vissuto in Italia per almeno 5 anni ed avere almeno 40 anni di età.</p>
+				<p>Per favore, nelle prossime domande in cui viene richiesta una risposta da inserire nella casella di testo usa le cifre numeriche. </p>
 				</div>
 				<div class="alert alert-danger" role="alert" id="alertmsg">
 				  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -30,7 +30,7 @@
 				<div class="form-group">
 				  <label class="col-md-4 control-label" for="age">Quanti anni hai?</label>  
 				  <div class="col-md-4">
-				  <input id="age" name="age" placeholder="type a number" class="form-control input-md" type="text" required>
+				  <input id="age" name="age" placeholder="digita un numero" class="form-control input-md" type="text" required>
 				    
 				  </div>
 				</div>
@@ -38,7 +38,7 @@
 				<div class="form-group">
 				  <label class="col-md-4 control-label" for="schoolInfo">Quanti anni di scuola hai completato?</label>
 				  <div class="col-md-4">
-				  <input id="schoolInfo" name="schoolInfo" placeholder="type a number" class="form-control input-md" required="" type="text">
+				  <input id="schoolInfo" name="schoolInfo" placeholder="digita un numero" class="form-control input-md" required="" type="text">
 				  <span>(Includendo le scuole elementari, medie e superiori, università, o altri tipi di istituti scolastici riconosciuti) </span>    
 				  </div>
 				</div>
@@ -47,7 +47,7 @@
 				<div class="form-group">
 				  <label class="col-md-4 control-label" for="age">Da quanti anni vivi in Italia?</label>  
 				  <div class="col-md-4">
-				  <input id="livinginfo" name="livingInfo" placeholder="type a number" class="form-control input-md" type="text" required>
+				  <input id="livinginfo" name="livingInfo" placeholder="digita un numero" class="form-control input-md" type="text" required>
 				    
 				  </div>
 				</div>
@@ -97,7 +97,7 @@
 				<div class="form-group">
 				  <label class="col-md-4 control-label" for="lastshop">Quanti giorni fa hai fatto la spesa al supermercato per l'ultima volta?</label>
 				  <div class="col-md-4">
-				  <input id="lastshop" name="lastShop" placeholder="type a number" class="form-control input-md" required="" type="text">
+				  <input id="lastshop" name="lastShop" placeholder="digita un numero" class="form-control input-md" required="" type="text">
 				  <span>(Se inserisci 0 significa che hai fatto la spesa per l'ultima volta oggi stesso) </span>    
 				  </div>
 				</div>
@@ -116,10 +116,10 @@
 		</div>	
 <!-- ======================================================== pre survey ======================================================================= -->		
 	<div class="row font-1" id="survey_info">
-		<p>Siamo interessati a raccogliere informazioni su come le persone associano gli oggetti ad un particolare tema o ad una particolare situazione (in questo studio useremo la situaziona di "fare la spesa al supermercato") e a come stimano i prezzi degli oggetti stessi.</p>
+		<p>Siamo interessati a raccogliere informazioni su come le persone associano gli oggetti ad un particolare tema o ad una particolare situazione (in questo studio useremo la situazione di "fare la spesa al supermercato") ed a come stimano i prezzi degli oggetti stessi.</p>
 		<p>Ti verrà presentato un prodotto alla volta. Per ciascun prodotto, la prima domanda sarà su quanto tipico è il prodotto quando si fa la spesa al supermercato e ti verrà richiesto di fornire una risposta usando una scala da 1 = per niente tipico (il prodotto non è associato per niente con il fare la spesa al supermercato) a 5 = molto tipico (il prodotto è fortemente associato con il fare la spesa al supermercato).</p>
 		<p>La seconda domanda riguarda lo stimare il prezzo (in euro) del prodotto e scrivere il prezzo nella casella di testo.</p>
-		<p>Dopo aver risposto a queste due domande, per favore clicca il pulsante "AVANTI" per far apparire il prossimo prodotto. Alla fine del questionario un messaggio apparirà sullo schermo per farti sapere che hai completato con successo il compito.</p>
+		<p>Dopo aver risposto a queste due domande, per favore clicca il pulsante "AVANTI" per far apparire il prossimo prodotto. Alla fine del questionario un messaggio apparirà sullo schermo per farti sapere che hai completato con successo il questionario.</p>
 		<p>Il questionario durerà circa 45 minuti.</p>
 		<p>Prima di cominciare il questionario della valutazione di prezzi dei prodotti, cerca di immaginare in maniera vivida nella tua mente, per alcuni secondi, com'è fare la spesa al supermercato. Cerca di immaginare con più dettagli possibili i prodotti e le azioni che riguardano fare la spesa al supermercato (ad es. andare al supermercato, scegliere i prodotti, andare alla cassa etc.). Dopo aver immaginato la situazione, puoi cominciare a compilare il questionario. I nomi dei prodotti e le loro immagini appariranno sullo schermo uno ad uno con due domande per ciascun prodotto. Queste domande sono descritte di seguito.</p>
 		<p>
@@ -179,7 +179,7 @@
 				</div>
 				 <h4>Quanto pensi possa costare questo prodotto?<h4> 
 				<!-- Text input-->
-				<span class="graySmall">(Per favore, usa il punto per separare gli euro dai centesimi, per esempio 2.50 per due euro e cinquanta centesimi)</span>
+				<span class="graySmall">(Per favore, usa il punto per separare gli euro dai centesimi, per esempio scrivi 2.50 se intendi valutare il prodotto due euro e cinquanta centesimi)</span>
 				  <br>
 				  <div class="col-md-5">
 				  <input id="textinput" name="q1_2" required placeholder="0.00" class="form-control input-md comeDown" type="text">
@@ -189,7 +189,7 @@
 				
 				<br>		
 				
-					<div class="col-xs-12 col-md-6"><input id="btnsend" value="Next" type="submit" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+					<div class="col-xs-12 col-md-6"><input id="btnsend" value="Avanti" type="submit" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
 					
 				</div>
 				<input type="hidden" id="blNum1" name="blNum1" value="">				
@@ -211,7 +211,7 @@
 	
 		<div class="row font-1" id="survey_end">
 		<p>
-			<h2>The questionnaire is ended. Thanks for your collaboration!</h2>
+			<h2>Il questionario è terminato. Grazie per la collaborazione.</h2>
 		</p>
 		</div>
 		
@@ -221,15 +221,15 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">�</button>
-							<h4 class="modal-title" id="myModalLabel">About</h4>
+							<h4 class="modal-title" id="myModalLabel">Informazioni</h4>
 						</div>
 						<div class="modal-body">
 							<h4>
-								This is a simple solution designed for a specific objective, in this case a survey with functionalities that Google forms, for example, cannot provide. Contact me at <strong><a href="mailto:ewertonews@hotmail.com?Subject=Web solution request" target="_top">ewertonews@hotmail.com</a></strong> if you would like to acquire one similar solution for your survey or any other purpose.
+								Una soluzione semplice realizzata per un obiettivo specifico, in questo caso un questionario con delle funzionalità che Google forms, per esempio, non può fornire. Contattami all'indirizzo ewertonews@hotmail.com (risponderò in inglese o in portoghese) se hai bisogno di una soluzione simile per creare il tuo questionario o per qualsiasi altra richiesta.  
 							</h4>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-primary" data-dismiss="modal">Go Back</button>
+							<button type="button" class="btn btn-primary" data-dismiss="modal">Ritorno</button>
 						</div>
 					</div><!-- /.modal-content -->
 				</div><!-- /.modal-dialog -->
