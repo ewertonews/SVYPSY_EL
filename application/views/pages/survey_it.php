@@ -3,8 +3,8 @@
 		<h3>Consenso</h3>
 		<br>
 		<p>Ti viene chiesto di partecipare a questo sondaggio preliminare in qualità di persona in salute e senza sintomi neurologici conosciuti. Durante il sondaggio ti verrà chiesto di stimare i prezzi di diversi prodotti.</p>
-		<p>La tua partecipazione è volontaria e puoi rifiutarti di svolgere il sondaggio in qualsiasi momento. I risultati di ogni partecipante sono considerati informazioni confidenziali e non verrà richiesta nessuna informazione identificativa. Saremo lieti di fornirti i risultati finali quando verranno elaborati e pubblicati, se interessato/a puoi contattare Elena Bertossi a ebertossi@research.baycrest.org, che sarà disponibile anche rispondere ad eventuali domande e chiarimenti.</p>
-		<p>Cliccando il pulsante "AVANTI", acconsenti al fatto di aver compreso che la tua partecipazione è volontaria, puoi rifiutarti di partecipare in qualsiasi momento durante il sondaggio e che nessuna informazione identificativa verrà raccolta. </p>
+		<p>La tua partecipazione è volontaria e puoi rifiutarti di svolgere il sondaggio in qualsiasi momento. I risultati di ogni partecipante sono considerati informazioni confidenziali e non verrà richiesta nessuna informazione identificativa. Saremo lieti di fornirti i risultati finali quando verranno elaborati e pubblicati. Se interessato/a puoi contattare Elena Bertossi a ebertossi@research.baycrest.org, che sarà disponibile anche a rispondere ad eventuali domande e chiarimenti.</p>
+		<p>Cliccando il pulsante "AVANTI", acconsenti al fatto di aver compreso che la tua partecipazione è volontaria, che puoi rifiutarti di partecipare in qualsiasi momento durante il sondaggio e che nessuna informazione identificativa verrà raccolta. </p>
 		<br>
 		
 		<button class="btn btn-primary" id="endconsent">Avanti</button>

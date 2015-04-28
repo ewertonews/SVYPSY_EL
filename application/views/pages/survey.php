@@ -3,7 +3,7 @@
 		<h3>Consent</h3>
 		<br>
 		<p>You have been asked to participate in this preliminary survey as a healthy control with no known neurological symptoms. The present survey will ask you to estimate the prices of different items.</p>
-		<p>Your participation is voluntary. You may refuse to participate in the survey at any point in time. Each individual’s results are confidential. No identifying information will be collected from you in this survey. We would be happy to provide you with the final results of the study when they appear in press, if you are interested please contact Elena Bertossi at ebertossi@research.baycrest.org. If you wish to contact 	someone not connected with the project about your rights as a research participant, feel free to call Dr. Ron Heslegrave, Chair of the Research Ethics Board at (416) 785-2500 ext. 2440.</p>
+		<p>Your participation is voluntary. You may refuse to participate in the survey at any point in time. Each individual’s results are confidential. No identifying information will be collected from you in this survey. We would be happy to provide you with the final results of the study when they appear in press. If you are interested please contact Elena Bertossi at ebertossi@research.baycrest.org. If you wish to contact 	someone not connected with the project about your rights as a research participant, feel free to call Dr. Ron Heslegrave, Chair of the Research Ethics Board at (416) 785-2500 ext. 2440.</p>
 		<p>By clicking the "Next" button, you are providing consent that you understand that your participating is voluntary and that you may refuse to participate at any point in time during the survey. You also understand that no identifying information will be collected from you in this survey.</p>
 		<br>
 		
