@@ -67,7 +67,7 @@
 				 </div>
 				 
 				 <div class="form-group">
-				  <label class="col-md-4 control-label comeLeft" for="groceryfreq">Quanto spesso fai la spesa al supermercato?</label>
+				  <label class="col-md-4 control-label comeLeft" for="groceryfreq">Quanto spesso fai la spesa al negozio di alimentari?</label>
 				  <div> 
 				    <label class="radio-inline" for="radios_grocery-0">
 				      <input name="groceryfreq" id="radios_grocery-0" value="never" required type="radio">
@@ -95,7 +95,7 @@
 				
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="lastshop">Quanti giorni fa hai fatto la spesa al supermercato per l'ultima volta?</label>
+				  <label class="col-md-4 control-label" for="lastshop">Quanti giorni fa hai fatto la spesa al negozio di alimentari per l'ultima volta?</label>
 				  <div class="col-md-4">
 				  <input id="lastshop" name="lastShop" placeholder="digita un numero" class="form-control input-md" required="" type="text">
 				  <span>(Se inserisci 0 significa che hai fatto la spesa per l'ultima volta oggi stesso) </span>    
@@ -116,12 +116,12 @@
 		</div>	
 <!-- ======================================================== pre survey ======================================================================= -->		
 	<div class="row font-1" id="survey_info">
-		<p>Siamo interessati a raccogliere informazioni su come le persone associano gli oggetti ad un particolare tema o ad una particolare situazione (in questo studio useremo la situazione di "fare la spesa al supermercato") ed a come stimano i prezzi degli oggetti stessi.</p>
-		<p>Ti verrà presentato un prodotto alla volta. Per ciascun prodotto, la prima domanda sarà su quanto tipico è il prodotto quando si fa la spesa al supermercato e ti verrà richiesto di fornire una risposta usando una scala da 1 = per niente tipico (il prodotto non è associato per niente con il fare la spesa al supermercato) a 5 = molto tipico (il prodotto è fortemente associato con il fare la spesa al supermercato).</p>
+		<p>Siamo interessati a raccogliere informazioni su come le persone associano gli oggetti ad un particolare tema o ad una particolare situazione (in questo studio useremo la situazione di "fare la spesa al negozio di alimentari") ed a come stimano i prezzi degli oggetti stessi.</p>
+		<p>Ti verrà presentato un prodotto alla volta. Per ciascun prodotto, la prima domanda sarà su quanto tipico è il prodotto quando si fa la spesa al negozio di alimentari e ti verrà richiesto di fornire una risposta usando una scala da 1 = per niente tipico (il prodotto non è associato per niente con il fare la spesa al negozio di alimentari) a 5 = molto tipico (il prodotto è fortemente associato con il fare la spesa al negozio di alimentari).</p>
 		<p>La seconda domanda riguarda lo stimare il prezzo (in euro) del prodotto e scrivere il prezzo nella casella di testo.</p>
 		<p>Dopo aver risposto a queste due domande, per favore clicca il pulsante "AVANTI" per far apparire il prossimo prodotto. Alla fine del questionario un messaggio apparirà sullo schermo per farti sapere che hai completato con successo il questionario.</p>
 		<p>Il questionario durerà circa 45 minuti.</p>
-		<p>Prima di cominciare il questionario della valutazione di prezzi dei prodotti, cerca di immaginare in maniera vivida nella tua mente, per alcuni secondi, com'è fare la spesa al supermercato. Cerca di immaginare con più dettagli possibili i prodotti e le azioni che riguardano fare la spesa al supermercato (ad es. andare al supermercato, scegliere i prodotti, andare alla cassa etc.). Dopo aver immaginato la situazione, puoi cominciare a compilare il questionario. I nomi dei prodotti e le loro immagini appariranno sullo schermo uno ad uno con due domande per ciascun prodotto. Queste domande sono descritte di seguito.</p>
+		<p>Prima di cominciare il questionario della valutazione di prezzi dei prodotti, cerca di immaginare in maniera vivida nella tua mente, per alcuni secondi, com'è fare la spesa al negozio di alimentari. Cerca di immaginare con più dettagli possibili i prodotti e le azioni che riguardano fare la spesa al negozio di alimentari (ad es. andare al negozio di alimentari, scegliere i prodotti, andare alla cassa etc.). Dopo aver immaginato la situazione, puoi cominciare a compilare il questionario. I nomi dei prodotti e le loro immagini appariranno sullo schermo uno ad uno con due domande per ciascun prodotto. Queste domande sono descritte di seguito.</p>
 		<p>
 			<img alt="" src="<?php echo substr((string)base_url(), 0, -1);?>/images/questions_it.png">
 			
@@ -135,17 +135,16 @@
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			
 			<form class="form-horizontal" id="answers" role="form"  action="<?= base_url() ?>index.php/home/createRecord">
-				<h2>Questionario della valutazione di prezzi dei prodotti</h2>
 				<hr class="colorgraph">
 				<div class="row">
-				<h2 id="item1"></h2>
 				<div id="currentitem"><span id="current"></span>/260</div>
 				<br>
 				<img alt="image1" src="" id="img1" width="380px">
+				<h2 id="item1"></h2>
 				<br><br>
 				
 				<fieldset>
-				<h4>Quanto è tipico questo prodotto quando si fa la spesa al supermercato?</h4>
+				<h4>Quanto è tipico questo prodotto quando si fa la spesa al negozio di alimentari?</h4>
 				
 				<!-- Multiple Radios (inline) -->
 				<div class="form-group">

@@ -134,13 +134,12 @@
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			
 			<form class="form-horizontal" id="answers" role="form"  action="<?= base_url() ?>index.php/home/createRecord">
-				<h2> Items and Prices Questionnaire </h2>
 				<hr class="colorgraph">
 				<div class="row">
-				<h2 id="item1"></h2>
 				<div id="currentitem"><span id="current"></span>/260</div>
 				<br>
 				<img alt="image1" src="" id="img1" width="380px">
+				<h2 id="item1"></h2>
 				<br><br>
 				
 				<fieldset>
