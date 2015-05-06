@@ -123,7 +123,7 @@
 		<p>Il questionario durerà circa 45 minuti.</p>
 		<p>Prima di cominciare il questionario della valutazione di prezzi dei prodotti, cerca di immaginare in maniera vivida nella tua mente, per alcuni secondi, com'è fare la spesa al negozio di alimentari. Cerca di immaginare con più dettagli possibili i prodotti e le azioni che riguardano fare la spesa al negozio di alimentari (ad es. andare al negozio di alimentari, scegliere i prodotti, andare alla cassa etc.). Dopo aver immaginato la situazione, puoi cominciare a compilare il questionario. I nomi dei prodotti e le loro immagini appariranno sullo schermo uno ad uno con due domande per ciascun prodotto. Queste domande sono descritte di seguito.</p>
 		<p>
-			<img alt="" src="<?php echo substr((string)base_url(), 0, -1);?>/images/questions_it.png" width="680" height="250">
+			<img alt="" src="<?php echo substr((string)base_url(), 0, -1);?>/images/questions_it.png">
 			
 		</p>
 		<br>
