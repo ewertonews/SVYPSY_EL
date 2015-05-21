@@ -34,6 +34,7 @@
 		var title2;
 		var curItem = 1;
 		var curIndex = 0;
+		var shown = [];
 
 		
 		$(function(){  				
@@ -65,8 +66,12 @@
 
 		   	//block number
 		   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
+
+
+		   	shown.push(parseInt(bn1));
 			
 		   	$("#blNum1").val(bn1);
+		   	
 			
 
 			$("#answers").submit(function(event){
@@ -86,28 +91,36 @@
 	
 						img1 = imgss[curIndex];
 						console.log(curIndex);
-						
-						title1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[0];
+
+						bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
+
+						console.log(bn1);
+						console.log(shown);
+
+						if (jQuery.inArray(parseInt(bn1), shown) == -1){
+
+							shown.push(parseInt(bn1));
+							
+							title1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[0];
+							
+							$("#img1").attr("src", "<?=  base_url(); ?>images/"+img1);
+						   	
+							$("#item1").text(title1);	
+		
+							$("#current").text(curItem);
+		
+							curItem = curItem + 1;
+							curIndex = curIndex + 1;	   	
 					
-						$("#img1").attr("src", "<?=  base_url(); ?>images/"+img1);
-					   	
-						$("#item1").text(title1);	
-	
-						$("#current").text(curItem);
-	
-						curItem = curItem + 1;
-						curIndex = curIndex + 1;	   	
-				
-					   	$("#it1").val(title1);
-					   	
-					   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
-						
-					   	$("#blNum1").val(bn1);
-						
-					   	$('input[name=q1_1]').attr('checked',false);
-						console.log(imgss.length);
-	
-						$("#textinput").val("");	
+						   	$("#it1").val(title1);
+						   						   							
+						   	$("#blNum1").val(bn1);
+							
+						   	$('input[name=q1_1]').attr('checked',false);
+							console.log(imgss.length);
+		
+							$("#textinput").val("");
+						}							
 					}else{
 						$("#survey").hide();
 						$("#survey_end").show();
@@ -169,14 +182,17 @@
 					type:'post',
 					url: "<?= base_url() ?>index.php/home/getLastSubjectId",
 					success: function(data){
-						info = JSON.parse(data)
+						console.log(data);
+
+						info = JSON.parse(data);
+
 						
 						$("#survey_info").hide();						
 						
 						$("#sid").val(info.sid);
 						console.log(data);
 						$("#survey").show();
-						console.log("success!!!")
+						console.log("success!!!");
 						
 					}
 				});	

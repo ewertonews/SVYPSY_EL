@@ -34,7 +34,7 @@
 		var title2;
 		var curItem = 1;
 		var curIndex = 0;
-
+		var shown = [];
 		
 		$(function(){  				
 			imgss = <?= $_SESSION['shufImages'] ?>;
@@ -64,6 +64,7 @@
 		   	$("#it1").val(title1);
 		   	
 		   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
+			shown.push(parseInt(bn1));
 			
 		   	$("#blNum1").val(bn1);
 			
@@ -85,28 +86,36 @@
 	
 						img1 = imgss[curIndex];
 						console.log(curIndex);
-						
-						title1 = img1.substring(0, img1.length - 4).split("-")[0];
+
+						bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
+
+						if (jQuery.inArray(parseInt(bn1), shown) == -1){
+
+							shown.push(parseInt(bn1));
+							
+							title1 = img1.substring(0, img1.length - 4).split("-")[0];
+							
+							$("#img1").attr("src", "<?=  base_url(); ?>images/"+img1);
+						   	
+							$("#item1").text(title1);	
+		
+							$("#current").text(curItem);
+		
+							curItem = curItem + 1;
+							curIndex = curIndex + 1;	   	
 					
-						$("#img1").attr("src", "<?=  base_url(); ?>images/"+img1);
-					   	
-						$("#item1").text(title1);	
-	
-						$("#current").text(curItem);
-	
-						curItem = curItem + 1;
-						curIndex = curIndex + 1;	   	
-				
-					   	$("#it1").val(title1);
-					   	
-					   	bn1 = img1.substring(0, img1.length - 4).split("-")[1].split("_")[1];
-						
-					   	$("#blNum1").val(bn1);
-						
-					   	$('input[name=q1_1]').attr('checked',false);
-						console.log(imgss.length);
-	
-						$("#textinput").val("");	
+						   	$("#it1").val(title1);
+						   	
+						   
+							
+						   	$("#blNum1").val(bn1);
+							
+						   	$('input[name=q1_1]').attr('checked',false);
+							console.log(imgss.length);
+		
+							$("#textinput").val("");
+						}						
+							
 					}else{
 						$("#survey").hide();
 						$("#survey_end").show();
