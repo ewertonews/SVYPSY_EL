@@ -77,12 +77,14 @@
 					data = $("#answers").serializeArray();
 					console.log(data);
 					var url = "<?= base_url() ?>index.php/home/createRecord";
+					$("#btnsend").prop("disabled",true);
 					$.ajax({
 						type: 'post',
 						url: url,
 						data: data,
 						success : function (){
 							console.log("well done my dear friend.");
+							
 						}
 					}).done(function(){
 		
@@ -118,6 +120,8 @@
 								console.log(imgss.length);
 			
 								$("#textinput").val("");
+								setTimeout(function(){$("#btnsend").prop("disabled",false);},1000);
+								
 							}						
 								
 						}else{
@@ -138,6 +142,9 @@
 				$("#formIntro").show();	
 			});
 
+			$("#textinput").change(function(){
+				
+			});
 
 			$("#proceed").click(function() {
 			    var empty = $("#subjectInfo").children().find("input").filter(function() {
