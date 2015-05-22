@@ -189,6 +189,14 @@
 				<br>		
 				
 					<div class="col-xs-12 col-md-6"><input id="btnsend" value="Avanti" type="submit" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+					<br>
+					<br>
+					<br>
+					<div class="alert alert-danger" role="alert" id="alertmsg2">
+				  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+				  <span class="sr-only">Error:</span>
+				  	PER FAVORE RISPONDI A TUTTLE LE DEMANDE
+				  </div>
 					
 				</div>
 				<input type="hidden" id="blNum1" name="blNum1" value="">				

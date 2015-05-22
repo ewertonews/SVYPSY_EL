@@ -83,7 +83,7 @@
 						url: url,
 						data: data,
 						success : function (){
-							console.log("well done my dear friend.");
+							console.log("well done my dear friend."); 
 							
 						}
 					}).done(function(){
