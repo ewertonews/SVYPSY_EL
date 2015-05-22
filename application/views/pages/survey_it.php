@@ -195,7 +195,7 @@
 					<div class="alert alert-danger" role="alert" id="alertmsg2">
 				  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
 				  <span class="sr-only">Error:</span>
-				  	PER FAVORE RISPONDI A TUTTLE LE DEMANDE
+				  	Per favore rispondi a tutte le domande
 				  </div>
 					
 				</div>
