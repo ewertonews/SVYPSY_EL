@@ -188,7 +188,7 @@
 				
 				<br>		
 				
-					<div class="col-xs-12 col-md-6"><input id="btnsend" value="Avanti" type="submit" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+					<div class="col-xs-12 col-md-6"><input id="btnsend" value="Avanti" type="button" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
 					<br>
 					<br>
 					<br>
